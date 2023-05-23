@@ -49,7 +49,7 @@ make all
 ./react_server
 
 ### After we need to open the Terminal windows and write :
-telent 127.0.0.1 <port>
+telent 127.0.0.1 port
   
   
 and than send messages...
