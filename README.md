@@ -67,7 +67,7 @@ make all
 telent 127.0.0.1 port
   
   
-and than send messages...
+and than send messages like chat Beej ...
   
 
 
