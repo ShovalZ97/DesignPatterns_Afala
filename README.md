@@ -19,21 +19,26 @@ void* createReactor()
 which creates a reactor.
 Returns a pointer to the reactor structure that will be passed to the following functions. When the reactor is created it does not work but every structure
 (init and alloc). The data will be collected
+
 B.
 Void stopReactor(void * this)
 Stops the reactor if it is active. otherwise does nothing.
 third.
+
 C.
 void startReactor(void * this)
 The trouble of a reactor begins.
-The nuisance will live in a busy loop and will actually call select or poll
+The nuisance will live in a busy loop and will actually call poll.
+
 D.
 Void addFd (void * this, int fd, handler_t handler). 
 Where t_handler is a pointer to a function that will be called when the fd is hot.
 We use t_handler.
+
 E.
 void WaitFor(void * this)
 Wait for join_pthread (3) until the reactor thread is finished.
+
 
 ## The cover of the library - the application
 The server works exactly like Beej's chat server (selectserver for example) the client that is in the model and works in front of Beej will work in front of him.
