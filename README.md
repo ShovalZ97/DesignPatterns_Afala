@@ -50,6 +50,8 @@ make all
 
 ### After we need to open the Terminal windows and write :
 telent 127.0.0.1 <port>
+  
+  
 and than send messages...
   
 
